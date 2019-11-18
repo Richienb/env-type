@@ -1,6 +1,6 @@
 {
     "name": "env-type",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Get the type of environment the script is running in.",
     "repository": "https://github.com/Richienb/env-type.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
