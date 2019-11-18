@@ -10,4 +10,4 @@
 */
 declare const envType: "browser" | "worker" | "node" | undefined
 
-export = envTye;
+export = envType;
