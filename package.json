@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "env-type",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Get the type of environment the script is running in.",
+    "repository": "https://github.com/Richienb/env-type.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,14 +11,21 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=6"
     },
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": [
+        "env",
+        "type",
+        "get",
+        "check"
+    ],
+    "dependencies": {
+        "env-crosser": "^1.0.0"
+    },
     "devDependencies": {
         "ava": "^2.1.0",
         "eslint-config-richienb": "^0.2.2",

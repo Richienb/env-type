@@ -1,7 +1,10 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-    if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const envCrosser = require("env-crosser")
 
-    return `${input} & ${postfix}`
-}
+module.exports = envCrosser({
+    browser: "browser",
+    worker: "worker",
+    node: "node",
+    fallback: undefined,
+})

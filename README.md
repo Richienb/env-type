@@ -1,41 +1,28 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Env type [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/env-type/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/env-type)
 
-My awesome module.
+Get the type of environment the script is running in.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/env-type.png)](https://npmjs.com/package/env-type)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install env-type
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const envType = require("env-type");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+envType
+//=> 'node' (When using NodeJS)
 ```
 
 ## API
 
-### theModule(input, options?)
+### envType
 
-#### input
+Type: `"browser" | "worker" | "node" | undefined`
 
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The type of environment the script is running in.

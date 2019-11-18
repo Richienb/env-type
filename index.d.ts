@@ -1,14 +1,13 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * The type of environment the script is running in.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const envType = require("env-type");
+ *
+ * envType
+ * //=> 'node' (When using NodeJS)
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare const envType: "browser" | "worker" | "node" | undefined
 
-export = theModule;
+export = envTye;
